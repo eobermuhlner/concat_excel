@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+group = 'ch.obermuhlner'
+version = '0.0.1'
+
+mainClassName = 'ch.obermuhlner.excel.ConcatApplication'
+applicationName = 'concat_excel'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.2'
+
+    testCompile 'junit:junit:4.12'
+}
+
